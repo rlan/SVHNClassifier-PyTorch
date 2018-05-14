@@ -70,7 +70,7 @@ A PyTorch implementation of [Multi-digit Number Recognition from Street View Ima
 1. Convert to LMDB format
 
     ```
-    $ python convert_to_lmdb.py --data_dir ../data
+    $ python convert_to_lmdb.py --data_dir ./data
     ```
 
 1. (Optional) Test for reading LMDBs
@@ -82,7 +82,7 @@ A PyTorch implementation of [Multi-digit Number Recognition from Street View Ima
 1. Train
 
     ```
-    $ python train.py --data_dir ../data --logdir ./logs
+    $ python train.py --data_dir ./data --logdir ./logs
     ```
 
 1. Retrain if you need
