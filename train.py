@@ -96,7 +96,7 @@ def _train(path_to_train_lmdb_dir, path_to_val_lmdb_dir, path_to_log_dir,
                 examples_per_sec = batch_size * num_steps_to_show_loss / duration
                 duration = 0.0
                 print '=> %s: step %d, loss = %f, learning_rate = %f (%.1f examples/sec)' % (
-                    datetime.now(), step, loss.data[0], learning_rate, examples_per_sec)
+                    datetime.now(), step, loss.item(), learning_rate, examples_per_sec)
 
             if step % num_steps_to_check != 0:
                 continue
