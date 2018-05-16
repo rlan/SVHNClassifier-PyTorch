@@ -1,6 +1,6 @@
 # SVHNClassifier-PyTorch
 
-A PyTorch implementation of [Multi-digit Number Recognition from Street View Imagery using Deep Convolutional Neural Networks](http://arxiv.org/pdf/1312.6082.pdf) 
+A PyTorch implementation of [Multi-digit Number Recognition from Street View Imagery using Deep Convolutional Neural Networks](http://arxiv.org/pdf/1312.6082.pdf)
 
 
 ## Results
@@ -12,6 +12,7 @@ Start evaluating
 Evaluate ./logs_train_0515_trained/model-360000.tar on /data/test.lmdb, accuracy = 0.956229
 Done
 ```
+> Accuracy 95.6229% on test dataset after 360,000 steps
 
 ## Requirements
 
