@@ -6,9 +6,12 @@ A PyTorch implementation of [Multi-digit Number Recognition from Street View Ima
 ## Results
 
 ### Accuracy
-![Accuracy](https://github.com/potterhsu/SVHNClassifier-PyTorch/blob/master/images/accuracy.png?raw=true)
 
-> Accuracy 95.32% on test dataset after 721,000 steps
+```
+Start evaluating
+Evaluate ./logs_train_0515_trained/model-360000.tar on /data/test.lmdb, accuracy = 0.956229
+Done
+```
 
 ## Requirements
 
@@ -24,7 +27,12 @@ A PyTorch implementation of [Multi-digit Number Recognition from Street View Ima
 
 * Protocol Buffers 3
 * LMDB
-* Visdom
+* Visdom (optional)
+
+### Dockerfile
+
+* CPU only. [Dockerfile](docker/Dockerfile)
+* GPU support. [Dockerfile](docker-gpu/Dockerfile)
 
 ## Setup
 
