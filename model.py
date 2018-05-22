@@ -120,7 +120,10 @@ class Model(nn.Module):
         return path_to_checkpoint_file
 
     def load(self, path_to_checkpoint_file):
-        self.load_state_dict(torch.load(path_to_checkpoint_file))
+        # gpu
+        #self.load_state_dict(torch.load(path_to_checkpoint_file))
+        # cpu
+        self.load_state_dict(torch.load(path_to_checkpoint_file, map_location=lambda storage, loc: storage))
         step = int(path_to_checkpoint_file.split('/')[-1][6:-4])
         return step
 
